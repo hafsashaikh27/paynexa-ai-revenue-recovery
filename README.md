@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="YOUR_LOGO_FILE" alt="PayNexa Logo" width="140"/>
+<img src="logo.png" alt="PayNexa Logo" width="140"/>
 
 # 💳 PayNexa — AI Revenue Recovery Platform
 
