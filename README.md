@@ -190,25 +190,25 @@ Track recovery performance and represented revenue impact.
 
 ---
 
-# 🔄 Core Workflow
+# 🔄 SYSTEM ARCHITECTURE
 
-```text
                  💳 PAYMENT FAILURE
                          │
                          ▼
-                🔍 DETECT FAILURE
+                🔍 FAILURE DETECTION
                          │
                          ▼
-                🧠 AI ANALYSIS
+                  🧠 AI ANALYSIS
                          │
                          ▼
-             📊 RECOVERY PROBABILITY
+              📊 RECOVERY PROBABILITY
                          │
                          ▼
-             🎯 RECOMMEND STRATEGY
+               🎯 RECOVERY STRATEGY
+                    RECOMMENDATION
                          │
                          ▼
-              🛡️ POLICY VALIDATION
+               🛡️ POLICY VALIDATION
                          │
                 ┌────────┴────────┐
                 │                 │
@@ -217,16 +217,23 @@ Track recovery performance and represented revenue impact.
                 ▼                 ▼
           👤 HUMAN REVIEW    ⚡ RECOVERY ACTION
                                   │
+                         ┌────────┴────────┐
+                         ▼                 ▼
+                    💳 RETRY /        💬 CUSTOMER
+                    RECOVERY           COMMUNICATION
+                         │                 │
+                         └────────┬────────┘
                                   ▼
                           📈 RECOVERY OUTCOME
                                   │
                          ┌────────┴────────┐
                          ▼                 ▼
-                    💬 COMMUNICATE     🧾 VERIFY
+                    🧾 VERIFICATION    👤 ESCALATION
                          │                 │
                          └────────┬────────┘
                                   ▼
-                             📋 AUDIT TRAIL
+                         📋 AUDIT TRAIL
                                   │
+PayNexa follows an AI-assisted, policy-controlled recovery architecture. Payment failures are detected and analyzed by the AI layer, which estimates recovery probability and recommends an appropriate recovery strategy. A deterministic Policy Engine validates the recommendation against retry limits, cooldown periods, customer opt-outs, and escalation rules before any recovery action is executed. Recovery outcomes are communicated, verified where required, and recorded in the audit trail for transparency and accountability.
                                   ▼
-                          📊 DASHBOARD
+                           📊 DASHBOARDDASHBOARD
