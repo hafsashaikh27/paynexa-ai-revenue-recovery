@@ -1,0 +1,6 @@
+{
+  "name": "PayNexa — AI Revenue Recovery Platform",
+  "description": "PayNexa intelligent revenue recovery platform with ML scoring and policy guardrails",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
