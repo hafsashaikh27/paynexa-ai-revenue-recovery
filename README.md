@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./logo.png" alt="PayNexa Logo" width="190"/>
+<img src="logo.png" alt="PayNexa Logo" width="190"/>
 
 # 💳 PayNexa
 
