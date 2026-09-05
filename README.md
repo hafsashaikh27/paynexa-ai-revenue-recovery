@@ -253,8 +253,6 @@ PayNexa follows an **AI-assisted but policy-controlled architecture**.
 
 The complete visual architecture is provided in:
 
-**`architecture.png`**
-
 <div align="center">
 
 <img src="./architecture.png" alt="PayNexa AI Revenue Recovery Platform System Architecture" width="100%">
