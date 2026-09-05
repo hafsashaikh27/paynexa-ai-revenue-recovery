@@ -251,7 +251,7 @@ The merchant receives a centralized view of revenue at risk, recovered revenue, 
 
 PayNexa follows an **AI-assisted but policy-controlled architecture**.
 
-The complete visual architecture is provided in:
+The complete visual architecture is provided:
 
 <div align="center">
 
