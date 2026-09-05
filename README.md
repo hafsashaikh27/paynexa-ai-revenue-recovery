@@ -89,8 +89,6 @@ The objective is not simply to identify failed payments, but to determine:
 
 > **AI recommends. Deterministic policies decide what is allowed. The system executes only bounded recovery actions, and important decisions are recorded for auditability.**
 
-This separation is particularly important for financial workflows where AI should not have unrestricted control over payment actions.
-
 ---
 
 # 🚨 Problem
@@ -195,24 +193,24 @@ Track recovery performance and represented revenue impact.
 # 🔄 Core Workflow
 
 ```text
-Payment Failure
+PAYMENT FAILURE
       ↓
-Failure Detection
+FAILURE DETECTION
       ↓
-Recovery Probability
+AI ANALYSIS
       ↓
-AI Analysis
+RECOVERY PROBABILITY
       ↓
-Strategy Recommendation
+STRATEGY RECOMMENDATION
       ↓
-Policy Validation
+POLICY VALIDATION
       ↓
-Recovery Action
+RECOVERY ACTION
       ↓
-Recovery Outcome
+RECOVERY OUTCOME
       ↓
-Communication / Verification
+COMMUNICATION / VERIFICATION
       ↓
-Audit Trail
+AUDIT TRAIL
       ↓
-Dashboard Metrics
+DASHBOARD
