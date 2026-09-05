@@ -69,7 +69,7 @@ Payment failures do not always represent permanent revenue loss. Some failures m
 
 PayNexa brings these capabilities together into a single merchant-facing platform.
 
-### 🎯 Core Objective
+## 🎯 Core Objective
 
 The platform follows an end-to-end recovery lifecycle:
 
@@ -85,7 +85,7 @@ The objective is not simply to identify failed payments, but to determine:
 - 👤 When should human intervention be required?
 - 📊 How much revenue is represented as recovered?
 
-### 🧠 Design Principle
+## 🧠 Design Principle
 
 > **AI recommends. Deterministic policies decide what is allowed. The system executes only bounded recovery actions, and important decisions are recorded for auditability.**
 
@@ -107,9 +107,9 @@ A failed transaction can occur because of:
 - 👤 Customer abandonment
 - ⚠️ Other potentially recoverable conditions
 
-For a merchant, a failed payment creates several questions:
+## ❓ What should happen after a failure?
 
-### ❓ What should happen after a failure?
+Merchants need to understand:
 
 - Which transactions represent meaningful revenue at risk?
 - Which transactions are worth attempting to recover?
@@ -120,7 +120,7 @@ For a merchant, a failed payment creates several questions:
 - When should the system stop?
 - Which cases require manual review?
 
-### 🚫 Why Blind Retries Are Not Enough
+## 🚫 Why Blind Retries Are Not Enough
 
 A simple retry-everything approach can result in:
 
@@ -132,7 +132,9 @@ A simple retry-everything approach can result in:
 - limited visibility into recovery decisions
 - difficulty auditing automated actions
 
-PayNexa addresses this by combining **AI-assisted analysis + deterministic policy guardrails + bounded recovery workflows + auditability**.
+PayNexa addresses this by combining:
+
+> **AI-assisted analysis + deterministic policy guardrails + bounded recovery workflows + auditability**
 
 ---
 
@@ -190,50 +192,27 @@ Track recovery performance and represented revenue impact.
 
 ---
 
-# 🔄 SYSTEM ARCHITECTURE
+# 🔄 Core Workflow
 
-                 💳 PAYMENT FAILURE
-                         │
-                         ▼
-                🔍 FAILURE DETECTION
-                         │
-                         ▼
-                  🧠 AI ANALYSIS
-                         │
-                         ▼
-              📊 RECOVERY PROBABILITY
-                         │
-                         ▼
-               🎯 RECOVERY STRATEGY
-                    RECOMMENDATION
-                         │
-                         ▼
-               🛡️ POLICY VALIDATION
-                         │
-                ┌────────┴────────┐
-                │                 │
-              ❌ BLOCK           ✅ ALLOW
-                │                 │
-                ▼                 ▼
-          👤 HUMAN REVIEW    ⚡ RECOVERY ACTION
-                                  │
-                         ┌────────┴────────┐
-                         ▼                 ▼
-                    💳 RETRY /        💬 CUSTOMER
-                    RECOVERY           COMMUNICATION
-                         │                 │
-                         └────────┬────────┘
-                                  ▼
-                          📈 RECOVERY OUTCOME
-                                  │
-                         ┌────────┴────────┐
-                         ▼                 ▼
-                    🧾 VERIFICATION    👤 ESCALATION
-                         │                 │
-                         └────────┬────────┘
-                                  ▼
-                         📋 AUDIT TRAIL
-                                  │
-PayNexa follows an AI-assisted, policy-controlled recovery architecture. Payment failures are detected and analyzed by the AI layer, which estimates recovery probability and recommends an appropriate recovery strategy. A deterministic Policy Engine validates the recommendation against retry limits, cooldown periods, customer opt-outs, and escalation rules before any recovery action is executed. Recovery outcomes are communicated, verified where required, and recorded in the audit trail for transparency and accountability.
-                                  ▼
-                           📊 DASHBOARDDASHBOARD
+```text
+Payment Failure
+      ↓
+Failure Detection
+      ↓
+Recovery Probability
+      ↓
+AI Analysis
+      ↓
+Strategy Recommendation
+      ↓
+Policy Validation
+      ↓
+Recovery Action
+      ↓
+Recovery Outcome
+      ↓
+Communication / Verification
+      ↓
+Audit Trail
+      ↓
+Dashboard Metrics
