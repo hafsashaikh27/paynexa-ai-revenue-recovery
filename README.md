@@ -1,11 +1,36 @@
 <div align="center">
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+<img src="YOUR_LOGO_FILE" alt="PayNexa Logo" width="140"/>
 
-  <h1>Built with AI Studio</h2>
+# 💳 PayNexa — AI Revenue Recovery Platform
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+### 🤖 AI-assisted payment recovery for recoverable revenue
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+[![Razorpay AI Buildathon 2026](https://img.shields.io/badge/Razorpay-AI%20Buildathon%202026-blue)]()
+[![AI Revenue Recovery](https://img.shields.io/badge/Track-AI%20Revenue%20Recovery-blue)]()
 
 </div>
+
+---
+
+## 🚀 About PayNexa
+
+PayNexa is an AI-assisted revenue recovery platform designed to detect
+failed payments, identify recoverable revenue, recommend policy-safe
+recovery actions, and provide an auditable recovery workflow.
+
+### ✨ Key Features
+
+💰 Revenue-at-Risk Detection  
+🤖 AI-Assisted Recovery Analysis  
+📊 Recovery Probability Scoring  
+🛡️ Deterministic Policy Guardrails  
+🔄 Smart Retry & Recovery Workflows  
+💬 Customer Communication & Preview  
+🧾 Offline Payment Verification  
+🔐 Audit Trail & Human Escalation  
+🧪 Recovery Strategy Experiments  
+📥 Excel Revenue Reports
+
+> ⚠️ **Demo Notice:** PayNexa uses simulated payment events and synthetic
+> evaluation data. No live payment debits are performed.
